@@ -1,0 +1,60 @@
+table, th, td {
+   border: 1px solid;
+   border-collapse: collapse;
+   border-color: black;
+   font-family: sans-serif;
+ }
+ 
+ .countdown-table th, .countdown-table td {
+  text-align: center;
+  padding-left: 4px;
+  border-color: white;
+  width: 50px;
+ }
+ .countdown-table td:nth-child(1), .countdown-table th:nth-child(1) {
+  text-align: left;
+  padding-left: 4px;
+  width: 150px;
+ }
+
+.timer-table td {
+  padding-left: 4px;
+  border-color: white;
+ }
+
+.timer-table td:nth-child(1) {
+  width: 50px;
+}
+
+.typeTable td {
+  border-color: grey;
+  border: 1px solid;
+}
+
+td.taskCell {
+  padding-left: 4px;
+}
+
+td.statusCell {
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+td.statusHeader {
+  text-align: center;
+}
+
+.highlight-selection {
+   background-color: grey !important;
+   opacity: 1 !important;
+ }
+
+.current-time-selection {
+  border: 2px solid;
+  border-color: red;
+}
+
+.with-comment {
+  border: 2px solid;
+  border-color: blue;
+}

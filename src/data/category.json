@@ -1,0 +1,7 @@
+{
+    "Work": "rgba(0, 255, 255)", 
+    "Study": "rgba(0, 255, 0)",
+    "Leisure": "rgba(255, 255, 0)",
+    "Health": "rgba(255, 69, 0)",
+    "Friends": "rgba(255, 105, 180)"
+}

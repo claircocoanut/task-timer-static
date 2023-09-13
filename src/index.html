@@ -1,17 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script> -->
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <title>Task Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <h1> Schedule </h1>
+    <!-- <div class="g-savetodrive"
+        data-src="//example.com/path/to/myfile.pdf"
+        data-filename="My Statement.pdf"
+        data-sitename="My Company Name">
+    </div> -->
+    <div>
+        <button id="toLastDate" onclick="switchDate(-1)"> Last Date </button> 
+        <button id="toNextDate" onclick="switchDate(1)"> Next Date </button> 
+    </div>
+    <br>
+    <div> 
+        <table class="timer-table">
+            <tr>
+                <td><b>Date: </b></td>
+                <td><span id="current-date" display="table-cell"></span></td>
+                <td><div id="current-date-label"></div></td>
+            </tr>
+            <tr>
+                <td><b>Time: </b></td>
+                <td><span id="current-time"></span></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table class="countdown-table">
+            <tr>
+                <th>(in hours) </td>
+                <th>Total</th>
+                <th>Spend</th>
+                <th>Remain</th>
+            </tr>
+            <tr>
+                <td><b>Planned time: </b></td>
+                <td><div id="plan-time"></div></td>
+                <td><div id="plan-time-spend"></div></td>
+                <td><div id="plan-time-left"></div></td>
+            </tr>
+            <tr>
+                <td><b>Free time: </b></td>
+                <td><div id="free-time"></div></td>
+                <td><div id="free-time-spend"></div></td>
+                <td><div id="free-time-left"></div></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div> 
+        <table id="todoTable"></table>
+        <br>
+        <input type="text" id="newTodoInput"  placeholder="New Item (e.g. Math videos coursera)" size="50">
+        <input type="text" id="newCategoryInput" placeholder="Category (e.g. Study)">
+        <button id="addTodoButton" onclick="addTodo()"> Add This To-Do </button> 
+    </div>
+    <div> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="type-table-p"></p>
+        <!-- <input id="newCategoryInput"> -->
+        <!-- <button id="addCategoryButton" onclick="addTodo()"> Add This To-Do </button>  -->
+    </div>    
+    <!-- <div>
+        <button id="download-local-storage" onclick="downloadLocalStorage()"> localStorage Backup </button> 
+    </div> -->
+    <!-- <script src="js/localStorage-backup.js"> </script> -->
+    <script src="js/default-vars.js"> </script>
+    <script src="js/timer.js"> </script>
+    <script src="js/type-table.js"> </script>
+    <script src="js/schedule-table.js"> </script>
 </body>
-
 </html>
